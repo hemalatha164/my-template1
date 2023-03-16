@@ -14,10 +14,8 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-TEMPLATE_DIR='C:\\Users\\pulic\\Desktop\\hema\\rolex\\Scripts\\project7\\templates'
-TEMPLATE_DIR=BASE_DIR\'templates'
-TEMPLATE_DIR=OS.path.join(BASE_DIR,'templates')
+import os
+TEMPLATES_DIR=os.path.join(BASE_DIR,'templates')
 
 
 
@@ -60,7 +58,7 @@ ROOT_URLCONF = 'project7.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR],
+        'DIRS': [TEMPLATES_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

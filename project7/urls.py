@@ -19,5 +19,6 @@ from pro.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('python/',sample,name='python'),
+    path('python/',python,name='python'),
+    path('loop/',loop,name='loop'),
 ]
